@@ -1,12 +1,6 @@
-import express from 'express';
-import routes from './routes';
-
-const app = express();
-app.use(express.json());
+import app from './app';
 
 const PORT = 3333;
-
-app.use(routes);
 
 app.listen(PORT, () => {
   console.log(`▶︎ Server up and running on ${PORT} 🛸`);
